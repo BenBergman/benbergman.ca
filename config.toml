@@ -1,56 +1,154 @@
 baseURL = "http://benbergman.ca/"
 languageCode = "en-us"
 title = "Ben Bergman"
-theme = "introduction"
+theme = "strata"
 # disqusshortname       = "xxx"                             # Enable Disqus for comments
 # googleAnalytics       = "xxx"
 
+# Define how many posts should appear on a site
+paginate = 10
+
 [params]
-    firstName           = "Ben"                             # First name shows in introduction on main page
-    tagLine             = "Maker of things"                 # Appears after the introduction
-    introHeight         = "large"                           # Input either 'medium' or 'large' or 'fullheight'
-    themeStyle          = "light"                           # Choose 'light' or 'dark'
-    avatar              = "img/lcd_tux.jpg"                 # Path to image in static folder eg. img/avatar.png, or comment out to remove
-    email               = "ben@benbergman.ca"               # Shows in contact section, or leave blank to omit
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Ben Bergman"
+	description = "I make things."
 
-    # localTime         = true                              # Show your current local time in contact section
-    timeZone            = "America/Winnipeg"                # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-    dateForm            = "Jan 2, 2006"
-    dateFormFull        = "Mon Jan 2 2006 15:04:05 EST"
-    cacheBuster         = false                             # Add the current unix timestamp in query string for cache busting css assets (relevant in development mode)
-    description         = "Ben Bergman. Maker of things."   # Max 160 characters show in search results
-    faviconFile         = "img/fav.ico"
-    pygmentsStyle       = "monokai"                         # https://help.farbox.com/pygments.html
-    pygmentsCodefences  = true
-    footerText          = ""                                # Text to show in footer (overrides default text)
-    fadeIn              = true                              # Turn on/off the fade-in effect
-    customCSS           = []                                # Include custom css files e.g. ["css/foo.css", "css/bar.css"]
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
 
-    showBlog            = true                              # Show Blog section on home page
-    showProjects        = true                              # Show Projects section on home page
-    projectColumns      = "3"                               # Choose "2" or "3" columns for projects section
-    placeHolderimg      = "/img/workday.jpg"                # For Projects without image
-    showAllPosts        = false                             # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
-    showLatest          = true                              # Show latest blog post summary
-    shareButtons        = true                              # On post pages, show share this social buttons
+	# Add read time estimates in the format "X min read"
+	show_read_time = false
 
-    # Share buttons
-    shareTwitter        = true
-    shareFacebook       = true
-    sharePinterest      = false
-    shareGooglePlus     = true
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = []
 
-# Social icons appear in introduction and contact section. Add as many more as you like.
-# Find icon names here: http://fontawesome.io/cheatsheet/
 
-[[params.social]]
-    url = "https://twitter.com/uberben"
-    icon = "twitter"
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "lcd_tux.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**I'm Ben**, maker of things.<br> I work with code, electronics,<br> and physical fabrication to create<br> engaging interactive experiences."
+		# The icons will be shown if you enter your username
+		twitter = "uberben"
+		github = "BenBergman"
+		gitlab = ""
+		dribbble = ""
+		facebook = ""
+		googleplus = ""
+		flickr = ""
+		linkedin = "benjaminbergman"
+        youtube = "GamesExplained" #TODO
 
-[[params.social]]
-    url = "https://github.com/BenBergman"
-    icon = "github"
+		copyright = [
+			"&copy; Benjamin Bergman",
+			"Design by [HTML5 UP](//html5up.net)",
+			"Photo by [Aperture Vintage](//unsplash.com/photos/SshYpuf607g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+		]
 
-[[params.social]]
-    url = "https://www.linkedin.com/in/benjaminbergman/"
-    icon = "linkedin"
+
+	[params.about]
+		hide  = false
+		title = "A little about me"
+		content = "I enjoy making things. I like to work with my hands and my brain, with bytes and electrons. I am interested in exploring the world of human computer interaction both to help people learn and to push what is expected."
+
+
+	[params.portfolio]
+		hide  = false
+		title = "Recent Work"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "facingthefuture.jpg"
+			thumb = "facingthefuture.jpg"
+			title = "[Facing the Future](https://humanrights.ca/exhibit/rights-of-passage-canada-at-150)"
+			description = "Step into the ever connected world of the internet. Your actions online have effects that ripple across the world."
+
+		[[params.portfolio.gallery]]
+			image = "speakingvolumes.png"
+			thumb = "speakingvolumes.png"
+			title = "[Speaking Volumes](https://humanrights.ca/exhibit/rights-of-passage-canada-at-150)"
+			description = "Use your voice to reveal artworks created by students from Children of the Earth High School art collective."
+
+		[[params.portfolio.gallery]]
+			image = "rightsofpassage.png"
+			thumb = "rightsofpassage.png"
+			title = "[Rights of Passage](https://humanrights.ca/exhibit/rights-of-passage-canada-at-150)"
+			description = "Explore the technology of the past and hear what was on the minds of the people at that time."
+
+		[[params.portfolio.gallery]]
+			image = "wordclock.jpg"
+			thumb = "wordclock.jpg"
+			title = "Contemporary Word Clock"
+			description = "A different take on the classic word clock."
+
+		[[params.portfolio.gallery]]
+			image = "graphtax.png"
+			thumb = "graphtax.png"
+			title = "[GraphTax.ca](http://graphtax.ca)"
+			description = "Tax brackets demystified. A project for [Outlier Finance](http://outlierfinance.com)."
+
+		[[params.portfolio.gallery]]
+			image = "dome.jpg"
+			thumb = "dome.jpg"
+			title = "The Dome"
+			description = "An exploratory art piece."
+
+		[[params.portfolio.gallery]]
+			image = "ujoypad.jpg"
+			thumb = "ujoypad.jpg"
+			title = "μJoypad"
+			description = "The world's smallest, fully functional NES controller."
+
+	[params.recentposts]
+		hide  = true
+		title = "Recent blog posts"
+
+	[params.contact]
+		hide  = false
+		title = "Get In Touch"
+		#content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
+
+		# This can be exact coordinates or a searchable address in google maps
+		#gmaps_address = "39.7889055,-120.5443524"
+		#address = [
+		#	#"1234 Somewhere Rd.",
+		#	"Winnipeg, MB",
+		#	"Canada"
+		#]
+		#phone = "000-000-0000"
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "ben@benbergman.ca" #TODO hide the email link in favour of people using the form
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
+
+
+# Menu links that appear on the left sidebar
+#[[menu.main]]
+#	name = "Home"
+#	url  = "/"
+#	weight = 10
+#
+#[[menu.main]]
+#	name = "Blog"
+#    url = "post/"
+#	weight = 0
