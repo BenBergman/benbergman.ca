@@ -62,43 +62,43 @@ paginate = 10
 		# Create and change subfolders as you like
 		[[params.portfolio.gallery]]
 			image = "facingthefuture.jpg"
-			thumb = "facingthefuture.jpg"
+			thumb = "facingthefuture_thumb.jpg"
 			title = "[Facing the Future](https://humanrights.ca/exhibit/rights-of-passage-canada-at-150)"
 			description = "Step into the ever connected world of the internet. Your actions online have effects that ripple across the world."
 
 		[[params.portfolio.gallery]]
 			image = "speakingvolumes.png"
-			thumb = "speakingvolumes.png"
+			thumb = "speakingvolumes_thumb.png"
 			title = "[Speaking Volumes](https://humanrights.ca/exhibit/rights-of-passage-canada-at-150)"
 			description = "Use your voice to reveal artworks created by students from Children of the Earth High School art collective."
 
 		[[params.portfolio.gallery]]
 			image = "rightsofpassage.png"
-			thumb = "rightsofpassage.png"
+			thumb = "rightsofpassage_thumb.png"
 			title = "[Rights of Passage](https://humanrights.ca/exhibit/rights-of-passage-canada-at-150)"
 			description = "Explore the technology of the past and hear what was on the minds of the people at that time."
 
 		[[params.portfolio.gallery]]
 			image = "wordclock.jpg"
-			thumb = "wordclock.jpg"
+			thumb = "wordclock_thumb.jpg"
 			title = "Contemporary Word Clock"
 			description = "A different take on the classic word clock."
 
 		[[params.portfolio.gallery]]
 			image = "graphtax.png"
-			thumb = "graphtax.png"
+			thumb = "graphtax_thumb.png"
 			title = "[GraphTax.ca](http://graphtax.ca)"
 			description = "Tax brackets demystified. A project for [Outlier Finance](http://outlierfinance.com)."
 
 		[[params.portfolio.gallery]]
 			image = "dome.jpg"
-			thumb = "dome.jpg"
+			thumb = "dome_thumb.jpg"
 			title = "The Dome"
 			description = "An exploratory art piece."
 
 		[[params.portfolio.gallery]]
 			image = "ujoypad.jpg"
-			thumb = "ujoypad.jpg"
+			thumb = "ujoypad_thumb.jpg"
 			title = "μJoypad"
 			description = "The world's smallest, fully functional NES controller."
 
